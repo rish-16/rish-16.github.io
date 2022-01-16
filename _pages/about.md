@@ -18,7 +18,7 @@ I'm a Year 2 at the _National University of Singapore_ (NUS) studying Computer S
 - IT Secretary for the 24th Management Committee of [Computing Club](https://nuscomputing.com/about/), NUS School of Computing (student council, of sorts)
 
 ### Previously
-- Teaching Assistant for **CS3244: Machine Learning** at NUS School of Computing
+- Teaching Assistant for _CS3244: Machine Learning_ at NUS School of Computing
 - ML Research Student at A*STAR looking at protein studies for COVID-19 and Influenza
 - Data Science Intern at Grab, Inc. working on faster facial recognition pipelines for drivers
 - ML Research Student at NUS-Singtel Cybersec R&D Lab looking into e-mail malware detection pipelines
