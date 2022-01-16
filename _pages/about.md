@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Year 2 at the National University of Singapore (NUS) studying Computer Science and Pure Mathematics (CO '24). I'm also part of the NUS University Scholars Program (USP).
+I'm a Year 2 at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24).
 
-I'm a Machine Learning research student with an interest in Graph Deep Learning, Reinforcement Learning, and Computer Vision. I'm also an active technical writer, open-source contributor, and ML consultant. Since 2015, I've been dabbling with Deep Learning at various startups and research institutions.
+I'm a Machine Learning research student with an interest in Graph Deep Learning, Reinforcement Learning, and Computer Vision. I'm also an active technical writer and open-source contributor. Oh, and I like collecting tech swag and laptop stickers/decals (200+ and counting!).
 
 > This new website is still a WIP. Check out [this site](https://rish16.notion.site/Rishabh-Anand-ceb23e08fecf4afb8732fe0f55039f90) for more complete details.
 
@@ -24,6 +24,3 @@ I'm a Machine Learning research student with an interest in Graph Deep Learning,
 - ML Research Student at A*STAR looking at protein studies for COVID-19 and Influenza
 - Data Science Intern at Grab, Inc. working on faster facial recognition pipelines for drivers
 - ML Research Student at NUS-Singtel Cybersec R&D Lab looking into e-mail malware detection pipelines
-
-### Usually
-I'm found jamming on my electric guitar 🎸 or scrolling through memes. Oh, and I like collecting tech swag and laptop stickers/decals (200+ and counting!).
