@@ -9,7 +9,9 @@ redirect_from:
 
 ### Pretrained Encoders are All You Need
 **Published:** Workshop on Unsupervised Representation Learning, ICML, 2021
+
 **Source:** [[abs](https://arxiv.org/abs/2106.05139), [pdf](https://arxiv.org/pdf/2106.05139)]
+
 **Authors:** Mina Khan, P Srivatsa, Advait Rane, Shriram Chenniappa, <u>Rishabh Anand</u>, Sherjil Ozair, Pattie Maes
 
 <pre>
