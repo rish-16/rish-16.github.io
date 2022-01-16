@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Rishabh Anand"
+title: "About"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -11,6 +11,8 @@ redirect_from:
 I'm a Year 2 at the National University of Singapore (NUS) studying Computer Science and Pure Mathematics (CO '24). I'm also part of the NUS University Scholars Program (USP).
 
 I'm a Machine Learning research student with an interest in Graph Deep Learning, Reinforcement Learning, and Computer Vision. I'm also an active technical writer, open-source contributor, and ML consultant. Since 2015, I've been dabbling with Deep Learning at various startups and research institutions.
+
+> This new website is still a WIP. Check out [this site](https://rish16.notion.site/Rishabh-Anand-ceb23e08fecf4afb8732fe0f55039f90) for more complete details.
 
 ### Currently
 - Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) working on Graph Deep Learning and Expressiveness 
