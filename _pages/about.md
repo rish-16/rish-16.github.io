@@ -14,7 +14,7 @@ I'm a Year 2 at the _National University of Singapore_ (NUS) studying Computer S
 - Reinforcement Learning
 - Computer Vision (mainly Self-supervised)
 
-I'm also an active technical writer and open-source contributor on ML tooling and easy-to-use wrappers. 
+I'm also an active technical writer and open-source contributor on the same.
 
 <!-- > This new website is still a WIP. Check out [this site](https://rish16.notion.site/Rishabh-Anand-ceb23e08fecf4afb8732fe0f55039f90) for more complete details. -->
 
