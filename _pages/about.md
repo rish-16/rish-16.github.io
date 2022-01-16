@@ -10,7 +10,7 @@ redirect_from:
 
 I'm a Year 2 at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student with an interest in Graph Deep Learning, Reinforcement Learning, and Computer Vision. I'm also an active technical writer and open-source contributor.
 
-> This new website is still a WIP. Check out [this site](https://rish16.notion.site/Rishabh-Anand-ceb23e08fecf4afb8732fe0f55039f90) for more complete details.
+<!-- > This new website is still a WIP. Check out [this site](https://rish16.notion.site/Rishabh-Anand-ceb23e08fecf4afb8732fe0f55039f90) for more complete details. -->
 
 ### Currently
 - Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) working on Graph Deep Learning and Expressiveness 
