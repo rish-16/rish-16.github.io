@@ -8,9 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Year 2 at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24).
-
-I'm a Machine Learning research student with an interest in Graph Deep Learning, Reinforcement Learning, and Computer Vision. I'm also an active technical writer and open-source contributor. Oh, and I like collecting tech swag and laptop stickers/decals (200+ and counting!).
+I'm a Year 2 at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student with an interest in Graph Deep Learning, Reinforcement Learning, and Computer Vision. I'm also an active technical writer and open-source contributor.
 
 > This new website is still a WIP. Check out [this site](https://rish16.notion.site/Rishabh-Anand-ceb23e08fecf4afb8732fe0f55039f90) for more complete details.
 
