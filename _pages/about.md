@@ -12,9 +12,9 @@ I'm a Year 2 at the National University of Singapore (NUS) studying Computer Sci
 
 I'm a Machine Learning research student with an interest in Graph Deep Learning, Reinforcement Learning, and Computer Vision. I'm also an active technical writer, open-source contributor, and ML consultant. Since 2015, I've been dabbling with Deep Learning at various startups and research institutions.
 
-## Currently
+### Currently
 - Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) working on Graph Deep Learning and Expressiveness 
-- Teaching Assistant for [CS2109S: Introduction to AI and Machine Learning](https://nusmods.com/modules/CS2109S/introduction-to-ai-and-machine-learning). This module debuts the semester I'm teaching it; it'll be fun shaping the future of this course!
+- Teaching Assistant for [CS2109S: Introduction to AI and Machine Learning](https://nusmods.com/modules/CS2109S/introduction-to-ai-and-machine-learning) (debuted the semester I taught here)
 - IT Secretary for the 24th Management Committee of [Computing Club](https://nuscomputing.com/about/), NUS School of Computing (student council, of sorts)
 
 ### Previously
