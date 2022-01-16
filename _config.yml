@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Rishabh Anand"
   avatar           : "profile.jpg"
-  bio              : "ML research student • Open-source Jedi • Writer"
+  bio              : "Undergrad research student, Open-source contributor, Writer"
   location         : "Singapore"
-  employer         : "National University of Singapore (NUS)"
+  employer         : "NUS"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=mn7sL5MAAAAJ&hl=en"
-  email            :
+  email            : "mail.rishabh.anand@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -100,7 +100,8 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : 
+  impactstory      :
+  medium           : "http://medium.com/@mail.rishabh.anand"
   lastfm           :
   linkedin         : "http://linkedin.com/in/rishabhanand16/"
   orcid            : 
