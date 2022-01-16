@@ -19,7 +19,7 @@ I'm also an active technical writer and open-source contributor on the same.
 <!-- > This new website is still a WIP. Check out [this site](https://rish16.notion.site/Rishabh-Anand-ceb23e08fecf4afb8732fe0f55039f90) for more complete details. -->
 
 ### Currently
-- Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) working on Graph Deep Learning and Expressiveness 
+- Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) working on Graph Deep Learning and Graph Neural Network Expressiveness 
 - Teaching Assistant for [CS2109S: Introduction to AI and Machine Learning](https://nusmods.com/modules/CS2109S/introduction-to-ai-and-machine-learning) (debuted the semester I taught here)
 - IT Secretary for the 24th Management Committee of [Computing Club](https://nuscomputing.com/about/), NUS School of Computing (student council, of sorts)
 
