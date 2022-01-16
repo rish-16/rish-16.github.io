@@ -12,7 +12,7 @@ redirect_from:
 **Source:** [[abs](https://arxiv.org/abs/2106.05139), [pdf](https://arxiv.org/pdf/2106.05139)]
 **Authors:** Mina Khan, P Srivatsa, Advait Rane, Shriram Chenniappa, <u>Rishabh Anand</u>, Sherjil Ozair, Pattie Maes
 
-```
+<code>
 @misc{khan2021pretrained,
       title={Pretrained Encoders are All You Need}, 
       author={Mina Khan and P Srivatsa and Advait Rane and Shriram Chenniappa and Rishabh Anand and Sherjil Ozair and Pattie Maes},
@@ -21,4 +21,4 @@ redirect_from:
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
-```
+</code>
