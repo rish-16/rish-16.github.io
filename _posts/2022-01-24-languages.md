@@ -44,3 +44,5 @@ Languages are fascinating: they have evolved from being simple media of communic
 > “Programming is a medium of communication – not between man and machine, but amongst man himself.” ~ my freshman "Intro to Programming" Professor at NUS
 
 I look forward to how communication with computers changes over the next few years. The improvement in SOTA NLP models suggests the possible usage of natural language to instruct computers on what to do. However, I feel it's more worthwhile to teach computers to fully understand the nuance of what these commands mean instead of simply translating between natural language and machine code/language (brings the whole [Chinese Room Argument](https://plato.stanford.edu/entries/chinese-room/) into picture).
+
+_Thank you to my classmate, Rachelle, for her 5-minute crash course on the history and evolution of language over text!!_
