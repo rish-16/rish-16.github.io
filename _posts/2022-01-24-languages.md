@@ -1,6 +1,6 @@
 ---
 title: 'Mediums of Computational Communication'
-date: 2022-01-16
+date: 2022-01-24
 permalink: /posts/2022/01/languages/
 tags:
     - machine languages
