@@ -1,5 +1,5 @@
 ---
-title: 'Placeholder Article'
+title: 'Read this!'
 date: 2022-01-16
 permalink: /posts/2022/01/intro-post/
 tags:
