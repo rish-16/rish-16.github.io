@@ -14,15 +14,15 @@ I'm currently taking a class on [computers and information technology](https://n
  
 In this post, I wish to highlight three more differences I think are very cool and do a fine job at differentiating the two. They are, to some extent, inspired by the book I'm reading titled "Thinking Forth" by _Leo Brodie_. FYI, `Forth` is a popular programming language created by _Charles H. Moore_ and is claimed to have been designed with a lot of forethought and reflection on what languages should be like. MLs are what the computer understands or is provided with. This includes low-level languages like `Assembly` and high-level languages like `Python` and `Golang`. 
 
-## The differences
+## The Differences
 
-1. **Order of Formalisation**
+### **Order of Formalisation**
 
 For HLs, the language is created and used first, then the grammar and syntax are invented. A bunch of people (i.e., linguists) come together and formalise a bunch of “rules” that help bucket/quantify the different unit elements of language (eg: words, phrases, the parts of speech, etc.). For MLs, the grammar, semantics, and syntax are devised first, and then the language is built on top of this schematic. Machine language is very derivative in that sense.
 
 <img src="/images/order.jpg" width="100%">
 
-2. **Presence of Design Principles**
+### **Presence of Design Principles**
 
 MLs have design principles that guide their construction:
 
@@ -30,7 +30,7 @@ MLs have design principles that guide their construction:
 
 However, HLs do not have such things attached to their creation. No one sat down one day and said “I’m going to create a schematic for a human language that’s so good, everyone’s gonna use it!!!”. It develops naturally the longer a diverse set of people use it. Furthermore, back in the day, languages evolved greatly when they were taken out of the location of origin and spread far and wide. Locals would add their. This isn't widely seen in MLs – it stays the same no matter where in the world it's used. Guess it automatically solves the issue of "but it works on my computer!". This goes back to MLs' rigidity when it comes to their expression and usage.
 
-3. **Generalisability to Higher-levels**
+### **Generalisability to Higher-levels**
 
 In the book, Brodie talks about how `Forth` was built using the design principles listed above. Conveniently, these design principles can be generalised to the construction of computer software in general ie. software can be modular, readable, writeable, manageable, or ripe with abstraction. It's a whole concept of the "creation" (the software built) being constructed using similar principles or considerations as the "medium of creation" (the ML or programming language used).
 
