@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Year 2 at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student with the following interests: 
+I'm a Junior at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student studying Graph Deep Learning. I have the following interests:
 
-- Graph Deep Learning
-- Reinforcement Learning
-- Computer Vision (mainly Self-supervised)
+- Graph Neural Network Expressiveness
+- Graph Networks and algorthmic alignment 
+- Intersections of Graph DL with RL, NLP, and SSL
 
-I'm also an active technical writer and open-source contributor on the same.
+I'm also an avid technical writer on ML/AI as well active open-source contributor for easy-to-use model implementations.
 
 ### Currently
 - Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) working on Graph Deep Learning and Graph Neural Network Expressiveness 
