@@ -11,6 +11,7 @@ redirect_from:
 I'm a Junior at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student studying Graph Deep Learning. I have the following interests:
 
 - Graph Neural Network Expressiveness
+- Graph Neural Network Optimisation Bottlenecks
 - Graph Networks and algorthmic alignment 
 - Intersections of Graph DL with RL, NLP, and SSL
 
