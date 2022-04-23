@@ -1,6 +1,6 @@
 ---
 title: '[WIP] Expressive GNNs and Where To Find Them'
-date: 2022-03-22
+date: 2022-04-24
 permalink: /posts/expressive-gnns/
 tags:
     - graph deep learning
