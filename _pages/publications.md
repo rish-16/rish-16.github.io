@@ -7,7 +7,7 @@ redirect_from:
   - /publications
 ---
 
-## Recent Advancements in Deep Learning for Routing Problems [[`openreview`](https://openreview.net/forum?id=4K7Na7nT65C), [`blog`](https://www.chaitjo.com/post/deep-learning-for-routing-problems/)]
+## Recent Advancements in Deep Learning for Routing Problems [[`openreview`](https://openreview.net/forum?id=4K7Na7nT65C), [`blog`](https://rish-16.github.io/posts/routing-dl/)]
 - ICLR Blogpost Track, 2022
 - Joint work with [_Chaitanya Joshi_](http://chaitjo.com)
 
