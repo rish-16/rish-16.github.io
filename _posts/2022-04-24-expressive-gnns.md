@@ -26,7 +26,7 @@ Before we get into the meat of the topic, let's get some preliminaries off the l
 
 ### Graphs 
 
-A graph is a data structure consists of nodes/vertices $$$V$$ and edges $$$E$$. These nodes represent entities or objects and the edges between them denote some relationship. These relationships are either unidirectional or bidirection. Let's assume we're working with undirected graphs for the rest of this post. 
+A graph is a data structure consists of nodes/vertices $$V$$ and edges $$E$$. These nodes represent entities or objects and the edges between them denote some relationship. These relationships are either unidirectional or bidirection. Let's assume we're working with undirected graphs for the rest of this post. 
 
 ### Graph Neural Networks
 
