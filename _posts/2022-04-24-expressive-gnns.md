@@ -52,7 +52,7 @@ $$\phi : \mathbb{R}^m \rightarrow \mathbb{R}^m$$, parameterised by $$\theta$$, t
 
 <img src="/images/2022-04-24-expressive-gnns/mp.png" width="100%">
 
-A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (coloured envelope) and has a neighbourhood $$\mathcal{N}_i$$. (right) A single round of Message Passing involves aggregating (collecting) representations from a target node's neighbourhood and incorporating them into its own representation, for all nodes in the graph in parallel.
+A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (coloured envelope) and has a neighbourhood $$\mathcal{N}_i$$ (left). A single round of Message Passing involves aggregating (collecting) representations from a target node's neighbourhood and incorporating them into its own representation, for all nodes in the graph in parallel (right).
 
 <img src="/images/2022-04-24-expressive-gnns/khop.png" width="100%">
 
@@ -68,6 +68,7 @@ Formally, two graphs are isomorphic if there exists a bijection (1:1 mapping) be
 ### Weisfeiler-Leman GI Test
 
 Two graphs are isomorphic if there exists a bijection between the vertex sets of both graphs. As such,  the most notable algorithm for graph isomorphism is the __Weisfeiler-Leman__ (WL) test. All nodes are assigned an initial _colour_ (node-wise discrete label) and through iterations of naive vertex refinement, the colours of nodes are updated by incorporating it with the colours of neighbouring nodes. This is done using a hash function that takes in a multiset of neighbouring node colours that outputs a unique label for the next round of refinement. The test determines two graphs are non-isomorphic if the distribution of new colours differ at some iteration. 
+
 
 
 However, the WL test is necessary but insufficient to show graph isomorphism as there exist pairs of non-isomorphic graphs that are indistinguishable using the method __ADDFIG__.
