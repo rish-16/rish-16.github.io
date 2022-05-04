@@ -50,12 +50,20 @@ $$
 
 $$\phi : \mathbb{R}^m \rightarrow \mathbb{R}^m$$, parameterised by $$\theta$$, takes in current edge feature $$a_{ij}^t$$, and respective node features $$h^t_i$$ and $$h^t_j$$, to output the new edge representation $$a_{ij}^{t+1}$$ for the next layer.
 
+<img src="/images/2022-04-24-expressive-gnns/messpass.png" width="100%">
+
+A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (coloured envelope) and has a neighbourhood $$\mathcal{N}_i$$. (right) A single round of Message Passing involves aggregating (collecting) representations from a target node's neighbourhood and incorporating them into its own representation, for all nodes in the graph in parallel.
+
+<img src="/images/2022-04-24-expressive-gnns/messpass.png" width="100%">
+
+<b>(a)</b> is the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer t=1. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
+
 ## Understanding Expressiveness
 
 __Expressiveness__ refers to the level at which a graph neural network can discriminate between two dissimiliar graphs. This brings us to the concept of _graph isomorphism_.
 
 ### Graph Isomorphism
-Formally, two graphs are isomorphic if there exists a bijection (1:1 mapping) between its edges. This means the connectivities of the graphs should be alike. Trivially,
+Formally, two graphs are isomorphic if there exists a bijection (1:1 mapping) between its edges. This means the connectivities of the graphs should be alike. Trivially, if they are different, the two graphs are non-isomorphic.
 
 ### Weisfeiler-Leman GI Test
 
