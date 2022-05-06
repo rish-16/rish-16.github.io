@@ -50,13 +50,19 @@ $$
 
 $$\phi : \mathbb{R}^m \rightarrow \mathbb{R}^m$$, parameterised by $$\theta$$, takes in current edge feature $$a_{ij}^t$$, and respective node features $$h^t_i$$ and $$h^t_j$$, to output the new edge representation $$a_{ij}^{t+1}$$ for the next layer.
 
+---
+
 <img src="/images/2022-04-24-expressive-gnns/mp.png" width="100%">
 
 __Figure 1:__ A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (coloured envelope) and has a neighbourhood $$\mathcal{N}_i$$ (left). A single round of Message Passing involves aggregating (collecting) representations from a target node's neighbourhood and incorporating them into its own representation, for all nodes in the graph in parallel (right).
 
+---
+
 <img src="/images/2022-04-24-expressive-gnns/khop.png" width="100%">
 
 __Figure 2:__ <b>(a)</b> is__Figure 1:__ the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer $$t=1$$. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
+
+---
 
 ## Understanding Expressiveness
 
@@ -71,13 +77,21 @@ Two graphs are isomorphic if there exists a bijection between the vertex sets of
 
 The key to working with node labels is the multiset hashing function. A multi
 
+---
+
 __Figure 3:__ The WL test performed on two graphs $$A$$ and $$B$$ that are isomorphic. 
 
+---
+
 However, the WL test is necessary but insufficient to show graph isomorphism as there exist pairs of non-isomorphic graphs that are indistinguishable using the method.
+
+---
 
 <img src="/images/2022-04-24-expressive-gnns/wlfail.png" width="100%">
 
 __Figure 4:__ Examples of two graphs indistinguishable by the WL test. They produce similar distributions through the iterations of colour refinement. It's catastrophic if datasets have graphs that exhibit similar properties and can't be told apart.
+
+---
 
 ### Higher-Order Structures
 
@@ -91,9 +105,13 @@ The vanilla WL test examines individual nodes and looks at their immediate 1-hop
 
 In fact, regular Message Passing Neural Networks fail 1-WL because aggregation functions like "mean" and "max" cannot tell apart two non-identical graphs. To avoid such scenarios, we introduce injectivity to the aggregation (multiset hashing) function; the "sum" aggregator is one such example.
 
+---
+
 <img src="/images/2022-04-24-expressive-gnns/aggrfail.png" width="100%">
 
 __Figure 5:__ The graphs on the left cannot be discriminated using the "max" aggregator. The graphs on the right cannot be discriminated using the "max" and "mean" aggregators. This is because these functions are not injective by nature.
+
+---
 
 ## Notable Works
 
