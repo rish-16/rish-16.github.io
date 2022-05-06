@@ -77,10 +77,10 @@ Two graphs are isomorphic if there exists a bijection between the vertex sets of
 
 ---
 
-<img src="/images/2022-04-24-expressive-gnns/hashfunc.jpg" width="100%">
+<img src="/images/2022-04-24-expressive-gnns/hashfunc.png" width="100%">
 <img src="/images/2022-04-24-expressive-gnns/wldemo.jpg" width="100%">
 
-__Figure 3:__ The WL test performed on two graphs $$A$$ and $$B$$ that are isomorphic. Labels are the degrees of each node. The multiset hashing function is $$H(S) = \sum_{i \in S} i^2$$. Similar degree nodes are coloured the same to show that they get mapped to the same hash value.
+__Figure 3:__ The WL test performed on two graphs $$A$$ and $$B$$ that are isomorphic. Labels are the degrees of each node. The multiset hashing function is $$H(S) = \sum_{i \in S} i^2$$. Similar degree nodes are coloured the same to show that they get mapped to the same hash value. Notice how the distributions of node labels stay the same for the two graphs for all $$n$$ iterations. This indicates they are highly likely isomorphic. 
 
 ---
 
