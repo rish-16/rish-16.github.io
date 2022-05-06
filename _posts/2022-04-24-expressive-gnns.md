@@ -73,17 +73,18 @@ Formally, two graphs are isomorphic if there exists a bijection (1:1 mapping) be
 
 ### Weisfeiler-Leman GI Test
 
-Two graphs are isomorphic if there exists a bijection between the vertex sets of both graphs. As such,  the most notable algorithm for graph isomorphism is the __Weisfeiler-Leman__ (WL) test. All nodes are assigned an initial _colour_ (node-wise discrete label) and through iterations of naive vertex refinement, the colours of nodes are updated by incorporating it with the colours of neighbouring nodes. This is done using a hash function that takes in a multiset of neighbouring node colours that outputs a unique label for the next round of refinement. The test determines two graphs are non-isomorphic if the distribution of new colours differ at some iteration. 
-
-The key to working with node labels is the multiset hashing function. A multi
+Two graphs are isomorphic if there exists a bijection between the vertex sets of both graphs. As such,  the most notable algorithm for graph isomorphism is the __Weisfeiler-Leman__ (WL) test. All nodes are assigned an initial _colour_ (node-wise discrete label) and through iterations of naive vertex refinement, the colours of nodes are updated by incorporating it with the colours of neighbouring nodes. This is done using a hash function that takes in a multiset of neighbouring node colours that outputs a unique label for the next round of refinement. The test determines two graphs are non-isomorphic if the distribution of new colours differ at some iteration. To ensure the WL test can really tell apart graphs, we need to ensure the hash function is injective (unique mapping from multiset to hashed value).
 
 ---
 
-__Figure 3:__ The WL test performed on two graphs $$A$$ and $$B$$ that are isomorphic. 
+<img src="/images/2022-04-24-expressive-gnns/hashfunc.jpg" width="100%">
+<img src="/images/2022-04-24-expressive-gnns/wldemo.jpg" width="100%">
+
+__Figure 3:__ The WL test performed on two graphs $$A$$ and $$B$$ that are isomorphic. Labels are the degrees of each node. The multiset hashing function is $$H(S) = \sum_{i \in S} i^2$$. Similar degree nodes are coloured the same to show that they get mapped to the same hash value.
 
 ---
 
-However, the WL test is necessary but insufficient to show graph isomorphism as there exist pairs of non-isomorphic graphs that are indistinguishable using the method.
+However, the WL test is necessary but insufficient to show graph isomorphism as there exist pairs of non-isomorphic graphs that are indistinguishable using the method. However, it has been a reliable test so far and works on most graphs. 
 
 ---
 
