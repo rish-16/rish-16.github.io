@@ -9,7 +9,7 @@ redirect_from:
 
 Here's a list of talks I've been invited to give over the yars:
 
-1. **Graph Deep Learning**. Workshop on Advances in Deep Learning and Applications (WADLA). IIIT. 2022
+1. **Graph Neural Network Expressiveness**. Workshop on Advances in Deep Learning and Applications. IIIT. 2022
 2. **Data Handling workshop on pandas and numpy**. CS3244, NUS (online). 2021
 3. **AI and Quantum Computing to the Rescue**. Hacker Noon Podcast. 2020
 4. **The TensorFlow Ecosystem**. FOSSASIA Summit, Singapore (online). 2020
