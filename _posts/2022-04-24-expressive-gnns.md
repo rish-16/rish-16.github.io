@@ -56,7 +56,7 @@ __Figure 1:__ A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (colour
 
 <img src="/images/2022-04-24-expressive-gnns/khop.png" width="100%">
 
-__Figure 2:__<b>(a)</b> is__Figure 1:__ the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer $$t=1$$. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
+__Figure 2:__ <b>(a)</b> is__Figure 1:__ the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer $$t=1$$. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
 
 ## Understanding Expressiveness
 
@@ -91,9 +91,9 @@ The vanilla WL test examines individual nodes and looks at their immediate 1-hop
 
 In fact, regular Message Passing Neural Networks fail 1-WL because aggregation functions like "mean" and "max" cannot tell apart two non-identical graphs. To avoid such scenarios, we introduce injectivity to the aggregation (multiset hashing) function; the "sum" aggregator is one such example.
 
-<img src="/images/2022-04-24-expressive-gnns/aggrfails.png" width="100%">
+<img src="/images/2022-04-24-expressive-gnns/aggrfail.png" width="100%">
 
-__Figure 5:__ The graphs on the left cannot be discriminated using the "mean" aggregation. The graphs on the right cannot be discriminated using the "max" and "mean" aggregator. 
+__Figure 5:__ The graphs on the left cannot be discriminated using the "max" aggregator. The graphs on the right cannot be discriminated using the "max" and "mean" aggregators. This is because these functions are not injective by nature.
 
 ## Notable Works
 
