@@ -60,7 +60,7 @@ __Figure 1:__ A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (colour
 
 <img src="/images/2022-04-24-expressive-gnns/khop.png" width="100%">
 
-__Figure 2:__ <b>(a)</b> is__Figure 1:__ the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer $$t=1$$. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
+__Figure 2:__ <b>(a)</b> is the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer $$t=1$$. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
 
 ---
 
