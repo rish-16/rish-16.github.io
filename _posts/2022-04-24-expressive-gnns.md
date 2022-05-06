@@ -52,11 +52,11 @@ $$\phi : \mathbb{R}^m \rightarrow \mathbb{R}^m$$, parameterised by $$\theta$$, t
 
 <img src="/images/2022-04-24-expressive-gnns/mp.png" width="100%">
 
-A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (coloured envelope) and has a neighbourhood $$\mathcal{N}_i$$ (left). A single round of Message Passing involves aggregating (collecting) representations from a target node's neighbourhood and incorporating them into its own representation, for all nodes in the graph in parallel (right).
+__Figure 1:__ A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (coloured envelope) and has a neighbourhood $$\mathcal{N}_i$$ (left). A single round of Message Passing involves aggregating (collecting) representations from a target node's neighbourhood and incorporating them into its own representation, for all nodes in the graph in parallel (right).
 
 <img src="/images/2022-04-24-expressive-gnns/khop.png" width="100%">
 
-<b>(a)</b> is the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer $$t=1$$. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
+__Figure 2:__<b>(a)</b> is__Figure 1:__ the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer $$t=1$$. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
 
 ## Understanding Expressiveness
 
@@ -69,11 +69,19 @@ Formally, two graphs are isomorphic if there exists a bijection (1:1 mapping) be
 
 Two graphs are isomorphic if there exists a bijection between the vertex sets of both graphs. As such,  the most notable algorithm for graph isomorphism is the __Weisfeiler-Leman__ (WL) test. All nodes are assigned an initial _colour_ (node-wise discrete label) and through iterations of naive vertex refinement, the colours of nodes are updated by incorporating it with the colours of neighbouring nodes. This is done using a hash function that takes in a multiset of neighbouring node colours that outputs a unique label for the next round of refinement. The test determines two graphs are non-isomorphic if the distribution of new colours differ at some iteration. 
 
+The key to working with node labels is the multiset hashing function. A multi
 
+__Figure 3:__ The WL test performed on two graphs $$A$$ and $$B$$ that are isomorphic. 
 
-However, the WL test is necessary but insufficient to show graph isomorphism as there exist pairs of non-isomorphic graphs that are indistinguishable using the method __ADDFIG__.
+However, the WL test is necessary but insufficient to show graph isomorphism as there exist pairs of non-isomorphic graphs that are indistinguishable using the method.
+
+<img src="/images/2022-04-24-expressive-gnns/wlfail.png" width="100%">
+
+__Figure 4:__ Examples of two graphs indistinguishable by the WL test. They produce similar distributions through the iterations of colour refinement. It's catastrophic if datasets have graphs that exhibit similar properties and can't be told apart.
 
 ### Higher-Order Structures
+
+To understand
 
 ### Weisfeiler-Leman Hierarchy
 
@@ -81,8 +89,18 @@ Expressiveness refers to the ability of a GNN to discriminate two graphs. The in
 
 The vanilla WL test examines individual nodes and looks at their immediate 1-hop neighbourhood. GNNs capable of discerning graphs using this 1-hop neighbourhood are called 1-WL GNNs. More formally, we say the GNN is as _powerful_ as 1-WL. We can generalise this to the $$k$$-hop neighbourhood where $$k \in \{2, 3, \dots\}$$. This wider neighbourhood can be viewed as a larger multiset of neighbours and _their_ neighbours, forming higher-order structures. When a GNN is able to discern these higher-order structures, we call it a $$k$$-WL GNN, and claim the GNN is as powerful as $$k$$-WL. Expressiveness is measured using these different "levels" of $$k$$-WL, altogether forming the _WL Hierarchy_. A $$k$$-WL GNN is strictly weaker than a $(k+1)$-WL GNN in that there exists a graph that the latter can discriminate and the former cannot but the converse is not true.
 
-In fact, regular Message Passing Neural Networks fail 1-WL because aggregation functions like "mean" and "max" cannot tell apart two non-identical graphs __ADDFIG__. To avoid such scenarios, we introduce injectivity to the aggregation – multiset hashing – function; the "sum" aggregator is one such example.
+In fact, regular Message Passing Neural Networks fail 1-WL because aggregation functions like "mean" and "max" cannot tell apart two non-identical graphs. To avoid such scenarios, we introduce injectivity to the aggregation (multiset hashing) function; the "sum" aggregator is one such example.
+
+<img src="/images/2022-04-24-expressive-gnns/aggrfails.png" width="100%">
+
+__Figure 5:__ The graphs on the left cannot be discriminated using the "mean" aggregation. The graphs on the right cannot be discriminated using the "max" and "mean" aggregator. 
 
 ## Notable Works
 
 ## Conclusion
+
+The research community has more or less moved away from standard GNNs towards expressive GNNs like those mentioned above. The obvious benefits include better structural awareness, which is paramount for real-life problems like protein studies, molecule interaction modelling, and social media analysis. I hope this blogpost shares some exciting insights about this new family of expressive GNNs. In terms of what's to come, I believe we need more benchmarking efforts to really compare these expressive GNNs with one another. This means coming up with new, dedicated datasets, both real-life and synthetic.
+
+> I look forward to sharing more with you in time! Lots of exciting work to be done and lots of learnings and takeaways in store. Stay tuned!
+>
+> Till then, I'll see you in the next post :D
