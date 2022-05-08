@@ -66,7 +66,7 @@ __Figure 2:__ <b>(a)</b> is the original graph. <b>(b)</b> is the rooted subtree
 
 ## Understanding Expressiveness
 
-__Expressiveness__ refers to the level at which a graph neural network can discriminate between two dissimiliar graphs. This brings us to the concept of _graph isomorphism_.
+Expressiveness refers to the ability of a GNN to discriminate two graphs. The inability to learn structural information from graphs results in _over-smoothing_ – when two different nodes are assigned the same embedding representation in latent space, thereby being classified as the same. Therefore, structural awareness is important as it imbues inductive biases such as invariance to positions of nodes into the GNN, thereby allowing it to tell apart graphs. This brings us to the concept of _graph isomorphism_.
 
 ### Graph Isomorphism
 Formally, two graphs are isomorphic if there exists a bijection (1:1 mapping) between its edges. This means the connectivities of the graphs should be alike. Trivially, if they are different, the two graphs are non-isomorphic.
@@ -94,15 +94,29 @@ __Figure 4:__ Examples of two graphs indistinguishable by the WL test. They prod
 
 ---
 
+### WL Test and Graph Neural Networks
+
+In fact, we can draw parallels between the WL Test and a GNN. The aggregation function stays the same (simply collect neighbours' labels) while the multiset hash function becomes the node readout function. Now, instead of node colours, we work with node features in GNNs. GNNs capable of discriminating two nodes (i.e., give them different representations in the embedding space) are __at most as powerful__ as the WL Test (upper bound on expressiveness). Moreover, if we make the hash function/aggregation injective, the GNN can be __as powerful as__ the WL Test (lower bound on expressiveness). This ensures two nodes are not assigned the same representation in the embedding space, thereby minimising the risk of classifying them as the same.
+
 ### Higher-Order Structures
 
-To understand
+So far, we've seen the WL test being used to discriminate between single nodes based on their colours/labels. There are more complex structures _within_ graphs that can be used to tell apart said graphs. Examples of these higher-order structures include rooted subtrees, $$k$$-hop neighbourhoods, and pairs/tuples of connected nodes. The more expressive a GNN, the better it can make use of these structural hints (i.e., these higher-order structures) to discriminate graphs during training.
+
+> In fact, certain works in the literature even augment GNNs with this higher-order structural information that cannot directly be inferred through the simple WL test. 
 
 ### Weisfeiler-Leman Hierarchy
 
-Expressiveness refers to the ability of a GNN to discriminate two graphs. The inability to learn structural information from graphs results in _over-smoothing_ – when two different nodes are assigned the same embedding representation in latent space, thereby being classified as the same. Therefore, structural awareness is important as it imbues inductive biases such as invariance to positions of nodes into the GNN, thereby allowing it to tell apart graphs.
+The vanilla WL test examines individual nodes and looks at their immediate 1-hop neighbourhood. GNNs capable of discerning graphs using this 1-hop neighbourhood are called 1-WL GNNs. More formally, we say the GNN is as _powerful_ as 1-WL. We can generalise this to the $$k$$-hop neighbourhood where $$k \in \{2, 3, \dots\}$$. This wider neighbourhood can be viewed as a larger multiset of neighbours and _their_ neighbours, forming so-called higher-order structures. When a GNN is able to discern these higher-order structures, we call it a $$k$$-WL GNN, and claim the GNN is as powerful as $$k$$-WL. Expressiveness is measured using these different "levels" of $$k$$-WL, altogether forming the __WL Hierarchy__. A $$k$$-WL GNN is strictly weaker than a $(k+1)$-WL GNN in that there exists a graph that the latter can discriminate while the former cannot but the converse is not true.
 
-The vanilla WL test examines individual nodes and looks at their immediate 1-hop neighbourhood. GNNs capable of discerning graphs using this 1-hop neighbourhood are called 1-WL GNNs. More formally, we say the GNN is as _powerful_ as 1-WL. We can generalise this to the $$k$$-hop neighbourhood where $$k \in \{2, 3, \dots\}$$. This wider neighbourhood can be viewed as a larger multiset of neighbours and _their_ neighbours, forming higher-order structures. When a GNN is able to discern these higher-order structures, we call it a $$k$$-WL GNN, and claim the GNN is as powerful as $$k$$-WL. Expressiveness is measured using these different "levels" of $$k$$-WL, altogether forming the _WL Hierarchy_. A $$k$$-WL GNN is strictly weaker than a $(k+1)$-WL GNN in that there exists a graph that the latter can discriminate and the former cannot but the converse is not true.
+---
+
+<img src="/images/2022-04-24-expressive-gnns/1wl.png" width="100%">
+<img src="/images/2022-04-24-expressive-gnns/2wl.png" width="100%">
+<img src="/images/2022-04-24-expressive-gnns/3wl.png" width="100%">
+
+__Figure 5:__ Expressiveness is quantitatively defined using the WL Hierarchy. __(top right)__ shows 1-WL expressiveness using the immediate 1-hop neighbourhood. __(middle)__ shows 2-WL expressiveness using the immediate 2-hop neighbourhood. __(bottom)__ shows 3-WL expressiveness using the immediate 3-hop neighbourhood. Altogether, they form rooted subtrees w.r.t. the target nodes being compared. The gray rectangles are the aggregated messages from the immediate neighbours.
+
+---
 
 In fact, regular Message Passing Neural Networks fail 1-WL because aggregation functions like "mean" and "max" cannot tell apart two non-identical graphs. To avoid such scenarios, we introduce injectivity to the aggregation (multiset hashing) function; the "sum" aggregator is one such example.
 
@@ -110,7 +124,7 @@ In fact, regular Message Passing Neural Networks fail 1-WL because aggregation f
 
 <img src="/images/2022-04-24-expressive-gnns/aggrfail.png" width="100%">
 
-__Figure 5:__ The graphs on the left cannot be discriminated using the "max" aggregator. The graphs on the right cannot be discriminated using the "max" and "mean" aggregators. This is because these functions are not injective by nature.
+__Figure 6:__ The graphs on the left cannot be discriminated using the "max" aggregator. The graphs on the right cannot be discriminated using the "max" and "mean" aggregators. This is because these functions are not injective by nature.
 
 ---
 
