@@ -1,6 +1,6 @@
 ---
 title: 'Expressive GNNs and How To Tame Them'
-date: 2022-04-24
+date: 2022-05-08
 permalink: /posts/expressive-gnns/
 tags:
     - graph deep learning
@@ -52,13 +52,13 @@ $$\phi : \mathbb{R}^m \rightarrow \mathbb{R}^m$$, parameterised by $$\theta$$, t
 
 ---
 
-<img src="/images/2022-04-24-expressive-gnns/mp.png" width="100%">
+<img src="/images/2022-05-08-expressive-gnns/mp.png" width="100%">
 
 __Figure 1:__ A node $$i$$ has a feature vector $$x_i \in \mathbb{R}^n$$ (coloured envelope) and has a neighbourhood $$\mathcal{N}_i$$ (left). A single round of Message Passing involves aggregating (collecting) representations from a target node's neighbourhood and incorporating them into its own representation, for all nodes in the graph in parallel (right).
 
 ---
 
-<img src="/images/2022-04-24-expressive-gnns/khop.png" width="100%">
+<img src="/images/2022-05-08-expressive-gnns/khop.png" width="100%">
 
 __Figure 2:__ <b>(a)</b> is the original graph. <b>(b)</b> is the rooted subtree of target node (green) at layer $$t=1$$. <b>(c)</b> is the rooted subtree of target node (green) at layer $$t=2$$. These rooted subtrees are multisets of node features.
 
@@ -77,8 +77,8 @@ Two graphs are isomorphic if there exists a bijection between the vertex sets of
 
 ---
 
-<img src="/images/2022-04-24-expressive-gnns/hashfunc.png" width="100%">
-<img src="/images/2022-04-24-expressive-gnns/wldemo.jpg" width="100%">
+<img src="/images/2022-05-08-expressive-gnns/hashfunc.png" width="100%">
+<img src="/images/2022-05-08-expressive-gnns/wldemo.jpg" width="100%">
 
 __Figure 3:__ The WL test performed on two graphs $$A$$ and $$B$$ that are isomorphic. Labels are the degrees of each node. The multiset hashing function is $$H(S) = \sum_{i \in S} i^2$$. Similar degree nodes are coloured the same to show that they get mapped to the same hash value. Notice how the distributions of node labels stay the same for the two graphs for all $$n$$ iterations. This indicates they are highly likely isomorphic. 
 
@@ -88,7 +88,7 @@ However, the WL test is necessary but insufficient to show graph isomorphism as 
 
 ---
 
-<img src="/images/2022-04-24-expressive-gnns/wlfail.png" width="100%">
+<img src="/images/2022-05-08-expressive-gnns/wlfail.png" width="100%">
 
 __Figure 4:__ Examples of two graphs indistinguishable by the WL test. They produce similar distributions through the iterations of colour refinement. It's catastrophic if datasets have graphs that exhibit similar properties and can't be told apart.
 
@@ -100,7 +100,7 @@ In fact, we can draw parallels between the WL Test and a GNN. The aggregation fu
 
 ---
 
-<img src="/images/2022-04-24-expressive-gnns/injective.png" width="100%">
+<img src="/images/2022-05-08-expressive-gnns/injective.png" width="100%">
 
 __Figure 5:__ Mathematically, an injective function ensures that every possible output (in the codomain) has at most one associated input (in the domain) that results in said output. So, by introducing injectivity into aggregation/readout function, we ensure every node's post-aggregation multiset is mapped to a unique label for the next iteration. Note that we aren't taking the nodes' own labels in the respective multisets. 
 
@@ -118,15 +118,15 @@ The vanilla WL test examines individual nodes and looks at their immediate 1-hop
 
 ---
 
-<img src="/images/2022-04-24-expressive-gnns/1wl.png" width="65%">
+<img src="/images/2022-05-08-expressive-gnns/1wl.png" width="65%">
 
 __Figure 6.1:__ Expressiveness is quantitatively defined using the WL Hierarchy. __(top left)__ is the original graph. __(top right)__ shows 1-WL expressiveness using the immediate 1-hop neighbourhood. The gray rectangles are the aggregated messages from the immediate neighbours. This is rather trivial.
 
-<img src="/images/2022-04-24-expressive-gnns/2wl.png" width="65%">
+<img src="/images/2022-05-08-expressive-gnns/2wl.png" width="65%">
 
 __Figure 6.2:__ Here, I show 2-WL expressiveness using the 2-hop neighbourhood.
 
-<img src="/images/2022-04-24-expressive-gnns/3wl.png" width="65%">
+<img src="/images/2022-05-08-expressive-gnns/3wl.png" width="65%">
 
 __Figure 6.3:__ Likewise, here, I show 3-WL expressiveness using the 3-hop neighbourhood.
 
@@ -138,7 +138,7 @@ In fact, regular Message Passing Neural Networks fail 1-WL because aggregation f
 
 ---
 
-<img src="/images/2022-04-24-expressive-gnns/aggrfail.png" width="100%">
+<img src="/images/2022-05-08-expressive-gnns/aggrfail.png" width="100%">
 
 __Figure 7:__ The graphs on the left cannot be discriminated using the "max" aggregator. The graphs on the right cannot be discriminated using the "max" and "mean" aggregators. This is because these functions are not injective by nature.
 
