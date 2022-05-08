@@ -146,7 +146,7 @@ __Figure 7:__ The graphs on the left cannot be discriminated using the "max" agg
 
 The theoretical research community has more or less moved away from standard GNNs towards expressive GNNs like those mentioned above. The obvious benefits include better structural awareness, which is paramount for real-life problems like protein studies, molecule interaction modelling, and social media analysis. I hope this blogpost shares some exciting insights about this new family of expressive GNNs. In terms of what's to come, I believe we need more _benchmarking efforts_ to really compare these expressive GNNs with one another. This means coming up with new, dedicated datasets, both real-life and synthetic. 
 
-Let me know if you want an in-depth review of notable works from the literature; there have been a lot of exciting SOTA works coming out lately. 
+Let me know if you want an in-depth review of notable works from the literature; there have been a lot of exciting SOTA works coming out lately. Also let me know if you want to access the extensive reading list I used to get me up-to-speed.
 
 > I look forward to sharing more with you in time! Lots of exciting work to be done and lots of learnings and takeaways in store. Stay tuned!
 >
