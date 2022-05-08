@@ -122,7 +122,7 @@ The vanilla WL test examines individual nodes and looks at their immediate 1-hop
 <img src="/images/2022-04-24-expressive-gnns/2wl.png" width="100%">
 <img src="/images/2022-04-24-expressive-gnns/3wl.png" width="100%">
 
-__Figure 6:__ Expressiveness is quantitatively defined using the WL Hierarchy. __(top right)__ shows 1-WL expressiveness using the immediate 1-hop neighbourhood. __(middle)__ shows 2-WL expressiveness using the 2-hop neighbourhood. __(bottom)__ shows 3-WL expressiveness using the 3-hop neighbourhood. Altogether, they form rooted subtrees w.r.t. the target nodes being compared. The gray rectangles are the aggregated messages from the immediate neighbours.
+__Figure 6:__ Expressiveness is quantitatively defined using the WL Hierarchy. __(top left)__ is the original graph. __(top right)__ shows 1-WL expressiveness using the immediate 1-hop neighbourhood. __(middle)__ shows 2-WL expressiveness using the 2-hop neighbourhood. __(bottom)__ shows 3-WL expressiveness using the 3-hop neighbourhood. Altogether, they form rooted subtrees w.r.t. the target nodes being compared. The gray rectangles are the aggregated messages from the immediate neighbours.
 
 ---
 
