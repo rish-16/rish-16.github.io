@@ -18,7 +18,7 @@ tags:
 
 ## Foreword
 
-At NUS, I'm currently looking into Graph Neural Network expressiveness and I'm really excited about it. I've spoken to a a few seniors in this area and had learned so much over the past few months. It's an exciting line of research within Graph DL and I'm sure the pace will pick up soon. It's more theoretical than practical currently but there's definitely room for expansion. In fact, I'm currently looking into the practical aspects of expressiveness at NUS, which seems to be an underexplored niche.
+At NUS, I'm currently looking into Graph Neural Network expressiveness and I'm really excited about it. I've spoken to a few seniors in this area and have learned so much over the past few months. It's an exciting line of research within Graph DL and I'm sure the pace will pick up soon. It's more theoretical than practical currently but there's definitely room for expansion. In fact, I'm currently looking into the practical aspects of expressiveness at NUS, which seems to be an underexplored niche.
 
 Before we get into the meat of the topic, let's get some preliminaries off the list first!
 
@@ -96,7 +96,15 @@ __Figure 4:__ Examples of two graphs indistinguishable by the WL test. They prod
 
 ### WL Test and Graph Neural Networks
 
-In fact, we can draw parallels between the WL Test and a GNN. The aggregation function stays the same (simply collect neighbours' labels) while the multiset hash function becomes the node readout function. Now, instead of node colours, we work with node features in GNNs. GNNs capable of discriminating two nodes (i.e., give them different representations in the embedding space) are __at most as powerful__ as the WL Test (upper bound on expressiveness). Moreover, if we make the hash function/aggregation injective, the GNN can be __as powerful as__ the WL Test (lower bound on expressiveness). This ensures two nodes are not assigned the same representation in the embedding space, thereby minimising the risk of classifying them as the same.
+In fact, we can draw parallels between the WL Test and a GNN. The aggregation function stays the same (simply collect neighbours' labels) while the multiset hash function becomes the node readout function. Now, instead of node colours, we work with node features in GNNs. GNNs capable of discriminating two nodes (i.e., give them different representations in the embedding space) are __at most as powerful__ as the WL Test (upper bound on expressiveness). Moreover, if we make the hash function/aggregation <u>injective</u>, the GNN can be __as powerful as__ the WL Test (lower bound on expressiveness). This ensures two nodes are not assigned the same representation in the embedding space, thereby minimising the risk of classifying them as the same.
+
+---
+
+<img src="/images/2022-04-24-expressive-gnns/injective.png" width="100%">
+
+__Figure 5:__ Mathematically, an injective function ensures that every possible output (in the codomain) has at most one associated input (in the domain) that results in said output. So, by introducing injectivity into aggregation/readout function, we ensure every node's post-aggregation multiset is mapped to a unique label for the next iteration. Note that we aren't taking the nodes' own labels in the respective multisets. 
+
+---
 
 ### Higher-Order Structures
 
@@ -114,7 +122,7 @@ The vanilla WL test examines individual nodes and looks at their immediate 1-hop
 <img src="/images/2022-04-24-expressive-gnns/2wl.png" width="100%">
 <img src="/images/2022-04-24-expressive-gnns/3wl.png" width="100%">
 
-__Figure 5:__ Expressiveness is quantitatively defined using the WL Hierarchy. __(top right)__ shows 1-WL expressiveness using the immediate 1-hop neighbourhood. __(middle)__ shows 2-WL expressiveness using the immediate 2-hop neighbourhood. __(bottom)__ shows 3-WL expressiveness using the immediate 3-hop neighbourhood. Altogether, they form rooted subtrees w.r.t. the target nodes being compared. The gray rectangles are the aggregated messages from the immediate neighbours.
+__Figure 6:__ Expressiveness is quantitatively defined using the WL Hierarchy. __(top right)__ shows 1-WL expressiveness using the immediate 1-hop neighbourhood. __(middle)__ shows 2-WL expressiveness using the 2-hop neighbourhood. __(bottom)__ shows 3-WL expressiveness using the 3-hop neighbourhood. Altogether, they form rooted subtrees w.r.t. the target nodes being compared. The gray rectangles are the aggregated messages from the immediate neighbours.
 
 ---
 
@@ -124,15 +132,13 @@ In fact, regular Message Passing Neural Networks fail 1-WL because aggregation f
 
 <img src="/images/2022-04-24-expressive-gnns/aggrfail.png" width="100%">
 
-__Figure 6:__ The graphs on the left cannot be discriminated using the "max" aggregator. The graphs on the right cannot be discriminated using the "max" and "mean" aggregators. This is because these functions are not injective by nature.
-
----
-
-## Notable Works
+__Figure 7:__ The graphs on the left cannot be discriminated using the "max" aggregator. The graphs on the right cannot be discriminated using the "max" and "mean" aggregators. This is because these functions are not injective by nature.
 
 ## Conclusion
 
-The research community has more or less moved away from standard GNNs towards expressive GNNs like those mentioned above. The obvious benefits include better structural awareness, which is paramount for real-life problems like protein studies, molecule interaction modelling, and social media analysis. I hope this blogpost shares some exciting insights about this new family of expressive GNNs. In terms of what's to come, I believe we need more benchmarking efforts to really compare these expressive GNNs with one another. This means coming up with new, dedicated datasets, both real-life and synthetic.
+The theoretical research community has more or less moved away from standard GNNs towards expressive GNNs like those mentioned above. The obvious benefits include better structural awareness, which is paramount for real-life problems like protein studies, molecule interaction modelling, and social media analysis. I hope this blogpost shares some exciting insights about this new family of expressive GNNs. In terms of what's to come, I believe we need more _benchmarking efforts_ to really compare these expressive GNNs with one another. This means coming up with new, dedicated datasets, both real-life and synthetic. 
+
+Let me know if you want an in-depth review of notable works from the literature; there have been a lot of exciting SOTA works coming out lately. 
 
 > I look forward to sharing more with you in time! Lots of exciting work to be done and lots of learnings and takeaways in store. Stay tuned!
 >
