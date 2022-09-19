@@ -18,13 +18,14 @@ I'm a Junior at the _National University of Singapore_ (NUS) studying Computer S
 I'm also an avid technical writer on ML/AI as well as an active open-source contributor for easy-to-use model implementations and wrappers. Find my CV [here](https://rish-16.github.io/cv/).
 
 ### Currently
-- Research student under [Prof. Kimon Fountoulakis](https://cs.uwaterloo.ca/people-profiles/kimon-fountoulakis) at the _OpAL Lab, University of Waterloo_ working on Graph Attention methods
+- Reviewer for [Learning on Graphs (LoG) Conference](http://logconference.org)
 - Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) at NUS working on efficient Graph Representation Learning on molecules
 - (Incoming) Research Student at ASTAR, Singapore working on Graph Deep Learning for the Open Catalyst Problem
 
 ### Previously
+- Research student at _OpAL Lab, University of Waterloo_ working on Graph Attention methods
 - Teaching Assistant for _CS2109s: Introduction to AI and Machine Learning_ at NUS Computing
 - Teaching Assistant for _CS3244: Machine Learning_ at NUS Computing
-- ML Research Student at A*STAR looking at protein studies for COVID-19 and Influenza
-- Data Science Intern at Grab working on faster facial recognition pipelines for drivers
-- ML Research Student at NUS-Singtel Cybersec R&D Lab looking into e-mail malware detection pipelines
+- ML Research Student at _ASTAR_ looking at protein studies for COVID-19 and Influenza
+- Data Science Intern at _Grab_ working on faster facial recognition pipelines for drivers
+- ML Research Student at _NUS-Singtel Cybersec R&D Lab_ looking into e-mail malware detection pipelines
