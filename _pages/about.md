@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Junior at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student specialising in (applied) Graph Deep Learning. I have the following interests:
+I'm a Y3 at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student specialising in (applied) Graph Deep Learning. I have the following interests:
 
 - Graph Representation Learning (molecules, proteins, text, etc.)
 - Graph Semi-supervised Learning
@@ -18,8 +18,7 @@ I'm a Junior at the _National University of Singapore_ (NUS) studying Computer S
 I'm also an avid technical writer on ML/AI as well as an active open-source contributor for easy-to-use model implementations and wrappers. Find my CV [here](https://rish-16.github.io/cv/).
 
 ### Currently
-- Reviewer for [Learning on Graphs (LoG) Conference](http://logconference.org)
-- Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) at NUS working on efficient Graph Representation Learning on molecules
+- Research Student under [Prof. Bryan Hooi](http://bhooi.github.io) at NUS working on efficient Graph Representation Learning for molecules
 - (Incoming) Research Student at ASTAR, Singapore working on Graph Deep Learning for the Open Catalyst Problem
 
 ### Previously
