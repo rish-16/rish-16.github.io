@@ -7,6 +7,6 @@ redirect_from:
   - /resume
 ---
 
-You can find my full **Academic CV** [here](https://drive.google.com/file/d/129nE8zQpP1d2LYjU89fIDs372XzOVJIM/view?usp=sharing).
+You can find my full **Academic CV** [here](https://drive.google.com/file/d/1LNJ-UHRHuyoMaxS2Kc_5n0yo67ABo7F3/view?usp=sharing).
 
-Alternatively, you can find my one-page resume [here](https://drive.google.com/file/d/1qAlSbXva-XB83CiiaaRlT--Br02E5mOq/view?usp=sharing).
+Alternatively, you can find my one-page resume [here](https://drive.google.com/file/d/17bDrjklXIxA-QU1hhcUF05A3v19Ka4jB/view?usp=sharing).
