@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Y3 at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student specialising in (applied) Graph Deep Learning. I have the following interests:
+I'm an undergrad at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I'm a Machine Learning research student specialising in (applied) Graph Deep Learning. I have the following interests:
 
 - Graph Representation Learning (molecules, proteins, text, etc.)
 - Graph Semi-supervised Learning
