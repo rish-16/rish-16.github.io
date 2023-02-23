@@ -13,12 +13,13 @@ redirect_from:
 - Geometric Deep Learning for Engineers. NUS IEEE. 2023
 - [**Applications of Graph Deep Learning**](https://www.youtube.com/watch?v=KCUM_FKK_Sk). NUS Hackers. NUS. 2022
 - **Graph Neural Network Expressiveness**. Workshop on Advances in Deep Learning and Applications. IIIT. 2022
-<!-- 4. **Data Handling workshop on pandas and numpy**. CS3244, NUS (online). 2021 -->
 - [**AI and Quantum Computing to the Rescue**](https://podcast.hackernoon.com/ai-and-quantum-computing-to-the-rescue/). Hacker Noon Podcast (accompanying Hacker Noon "Noonies" prize). 2020
 - [**The TensorFlow Ecosystem**](https://www.youtube.com/watch?v=8WvFn_GCSqM&t=5316s). FOSSASIA Summit, Singapore (online). 2020
 - **Why we need high-level AI education in high school**. PyCon Singapore. 2019
-<!-- 8. **Introduction to Machine Learning**. FOSSASIA Summit (workshop), Singapore. 2019 -->
 - **LSTMs for Predicting Free Energy Changes in Influenza**. Bioinformatics Institute, A*STAR. 2018
+
+<!-- 4. **Data Handling workshop on pandas and numpy**. CS3244, NUS (online). 2021 -->
+<!-- 8. **Introduction to Machine Learning**. FOSSASIA Summit (workshop), Singapore. 2019 -->
 
 ---
 
