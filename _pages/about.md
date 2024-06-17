@@ -8,9 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm an undergrad at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I work on geometric deep learning for molecular biology and cheminformatics, co-advised by [Prof. Bryan Hooi](http://bhooi.github.io) and [Prof. Pietro Lio](https://www.cl.cam.ac.uk/~pl219/). I enjoying working at the fascinating intersection of AI4Science!
-
-> I'm in Cambridge this summer as a visiting research student at Prof. Pietro's lab! I'll be focusing on geometric GNNs for protein dynamics. Reach out if you're in the area :D
+I'm a final-year undergrad at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I work on geometric deep learning and generative modeling for biology and chemistry problems, co-advised by [Prof. Bryan Hooi](http://bhooi.github.io) and [Prof. Pietro Lio](https://www.cl.cam.ac.uk/~pl219/). I enjoy working at the fascinating intersection of AI4Science!
 
 ---
 
