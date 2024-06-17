@@ -10,7 +10,7 @@ redirect_from:
 ## RNA-FrameFlow: Flow Matching for de novo 3D RNA Backbone Design [[`openreview`](https://openreview.net/forum?id=YzjHCdZM2h), [`code`](https://github.com/rish-16/rna-backbone-design)]
 - Oral (Top 1%) at SPIGM Workshop, ICML 2024
 - Spotlight (Top 5%) at AI4Science Workshop, ICML 2024
-- <strong>Rishabh Anand</strong>*, Chaitanya K. Joshi*, Alex Morehead, Arian Jamasb, Charles Harris, Simon V. Mathis, Kieran Didi, Bryan Hooi, Pietro Liò
+- <strong>Rishabh Anand</strong>\*, Chaitanya K. Joshi\*, Alex Morehead, Arian Jamasb, Charles Harris, Simon V. Mathis, Kieran Didi, Bryan Hooi, Pietro Liò
 
 ## Recent Advancements in Deep Learning for Routing Problems [[`openreview`](https://openreview.net/forum?id=4K7Na7nT65C), [`blog`](https://rish-16.github.io/posts/routing-dl/)]
 - Blogpost Track, ICLR, 2022
