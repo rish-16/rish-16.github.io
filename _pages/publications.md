@@ -16,7 +16,7 @@ redirect_from:
 
 ## gRNAde: Geometric Deep Learning for 3D RNA inverse design [[`arxiv`](https://arxiv.org/abs/2305.14749), [`code`](https://github.com/chaitjo/geometric-rna-design)]
 - Spotlight at Conference on Machine Learning for Computational Biology (MLCB), 2024
-- Workshop on Computational Biology, ICML 2024
+- Workshop on Computational Biology, ICML 2023
 - Chaitanya K. Joshi, Arian R. Jamasb, Ramon Viñas, Charles Harris, Simon V. Mathis, Alex Morehead, <strong>Rishabh Anand</strong>, Pietro Liò
 
 ## Recent Advancements in Deep Learning for Routing Problems [[`openreview`](https://openreview.net/forum?id=4K7Na7nT65C), [`blog`](https://rish-16.github.io/posts/routing-dl/)]
