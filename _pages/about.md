@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I'm a final-year undergrad at the _National University of Singapore_ (NUS) studying Computer Science and Mathematics (CO '24). I work on geometric deep learning and generative modeling for biology and chemistry problems, co-advised by [Prof. Bryan Hooi](http://bhooi.github.io) and [Prof. Pietro Lio](https://www.cl.cam.ac.uk/~pl219/). I enjoy working at the fascinating intersection of AI4Science!
+Hey! I'm Rishabh, a post-grad at Yale University advised by [Rex Ying](https://www.cs.yale.edu/homes/ying-rex/) and [Smita Krishnaswamy](https://krishnaswamylab.org/). I'm interested in **geometric deep learning and generative modelling for drug discovery and biomolecule design**. 
+
+I graduated from the _National University of Singapore_ (NUS) with a degree in Computer Science and Mathematics. I was co-advised by [Prof. Bryan Hooi](http://bhooi.github.io) and [Prof. Pietro Lio](https://www.cl.cam.ac.uk/~pl219/). My thesis was on **generative models for _de novo_ 3D RNA backbone design**.
 
 ---
 
