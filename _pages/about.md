@@ -16,4 +16,6 @@ I graduated from the _National University of Singapore_ (NUS) with a degree in C
 
 ---
 
-I'm also an avid writer on ML/AI as well as an active open-source contributor for ML tooling. Find my CV [here](https://rish-16.github.io/cv/) and blog [here](https://rish-16.github.io/year-archive/). Here's my [Standing invitation](https://www.kalzumeus.com/standing-invitation/) to reach out ;)
+I write about life and philosophy ([old blog](https://rish16.notion.site/aea001f7f32548acb068a9bb3971c97d?v=7e86063471c84a4b81694c11f511aa36), [new blog](https://rishflections.substack.com/)) and ML/AI/tech ([tech blog](https://rishtech.substack.com/)), and am also an active open-source contributor for ML tooling.
+
+Find my CV [here](https://rish-16.github.io/cv/) and blog [here](https://rish-16.github.io/year-archive/). Don't hesitate to reach out if you find any of this cool ;) 
