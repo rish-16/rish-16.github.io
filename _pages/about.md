@@ -12,7 +12,7 @@ Hey! I'm Rishabh, a grad student at Yale University advised by [Rex Ying](https:
 
 Currently, I'm a research intern at [Prescient Design](https://www.gene.com/scientists/our-scientists/prescient-design), working on similar things for antibody design, with Pooja Mahajan and Andrew Watkins. 
 
-I graduated from the _National University of Singapore_ (NUS) with a degree in Computer Science and Mathematics. I was co-advised by [Bryan Hooi](http://bhooi.github.io) and [Pietro Lio](https://www.cl.cam.ac.uk/~pl219/). My thesis was on **generative models for _de novo_ 3D RNA backbone design**.
+I graduated from the National University of Singapore (NUS) with a degree in Computer Science and Mathematics. I was co-advised by [Bryan Hooi](http://bhooi.github.io) and [Pietro Lio](https://www.cl.cam.ac.uk/~pl219/). My thesis was on **generative models for _de novo_ 3D RNA backbone design**.
 
 ---
 
