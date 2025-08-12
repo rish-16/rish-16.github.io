@@ -11,9 +11,9 @@ redirect_from:
 Neil He\*, <strong>Rishabh Anand</strong>\*, Hiren Madhu, Ali Maatouk, Smita Krishnaswamy, Leandros Tassiulas, Menglin Yang, Rex Ying
 - In review
 
-## RNA-FrameFlow: Flow Matching for de novo 3D RNA Backbone Design [[`arxiv`](https://arxiv.org/abs/2406.13839), [`code`](https://github.com/rish-16/rna-backbone-design)]
+## RNA-FrameFlow: Flow Matching for de novo 3D RNA Backbone Design [[`openreview`](https://openreview.net/forum?id=wOc1Yx5s09), [`code`](https://github.com/rish-16/rna-backbone-design)]
 <strong>Rishabh Anand</strong>\*, Chaitanya K. Joshi\*, Alex Morehead, Arian Jamasb, Charles Harris, Simon V. Mathis, Kieran Didi, Bryan Hooi, Pietro Liò
-- To appear in TMLR 2025
+- TMLR 2025
 - Oral at Conference on Machine Learning for Computational Biology (MLCB), 2024
 - Misc: Oral (Top 1%) at SPIGM Workshop, ICML 2024; Spotlight (Top 5%) at AI4Science Workshop, ICML 2024; MoML @ MIT 2024
 - Undergrad thesis at the National University of Singapore (Won **Best Thesis Prize** in CS department)
