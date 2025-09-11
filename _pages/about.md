@@ -16,6 +16,6 @@ I graduated from the National University of Singapore (NUS) with a degree in Com
 
 ---
 
-I write about life and philosophy ([old blog](https://rish16.notion.site/aea001f7f32548acb068a9bb3971c97d?v=7e86063471c84a4b81694c11f511aa36), [new blog](https://rishflections.substack.com/)) and ML/AI/tech ([tech blog](https://rishtech.substack.com/)), and am also an active open-source contributor for ML tooling.
+I write about life and a bunch of random seemingly-unconnected things ([old blog](https://rish16.notion.site/aea001f7f32548acb068a9bb3971c97d?v=7e86063471c84a4b81694c11f511aa36), [new blog](https://rishflections.substack.com/)) and ML/AI/tech ([tech blog](https://rishtech.substack.com/)), and am also an active open-source contributor for ML tooling.
 
 Find my CV [here](https://rish-16.github.io/cv/) and blog [here](https://rish-16.github.io/year-archive/). Don't hesitate to reach out if you find any of this cool ;) 
