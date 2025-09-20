@@ -7,9 +7,13 @@ redirect_from:
   - /publications
 ---
 
+## Platonic Transformers: A Solid Choice for Equivariance [TBA]
+Mohammad Islam, <strong>Rishabh Anand</strong>, David Wessels, Friso de Kruiff, Thijs P. Kuipers, Rex Ying, Clara I. Sánchez, Sharvaree Vadgama, Georg Bökman, Erik J Bekkers
+- In Review
+
 ## HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts [[`arxiv`](https://arxiv.org/abs/2505.24722), [`code`](https://github.com/Graph-and-Geometric-Learning/helm)]
 Neil He\*, <strong>Rishabh Anand</strong>\*, Hiren Madhu, Ali Maatouk, Smita Krishnaswamy, Leandros Tassiulas, Menglin Yang, Rex Ying
-- In review
+- NeurIPS, 2025
 
 ## RNA-FrameFlow: Flow Matching for de novo 3D RNA Backbone Design [[`openreview`](https://openreview.net/forum?id=wOc1Yx5s09), [`code`](https://github.com/rish-16/rna-backbone-design)]
 <strong>Rishabh Anand</strong>\*, Chaitanya K. Joshi\*, Alex Morehead, Arian Jamasb, Charles Harris, Simon V. Mathis, Kieran Didi, Bryan Hooi, Pietro Liò
@@ -24,8 +28,8 @@ Chaitanya K. Joshi, Arian R. Jamasb, Ramon Viñas, Charles Harris, Simon V. Math
 
 ## Recent Advancements in Deep Learning for Routing Problems [[`openreview`](https://openreview.net/forum?id=4K7Na7nT65C), [`blog`](https://rish-16.github.io/posts/routing-dl/)]
 Chaitanya Joshi and <strong>Rishabh Anand</strong> (equal contribution)
-- Top 50% of submissions, Blog Track, ICLR, 2022
+- Top 50% of submissions, Blog Track, ICLR 2022
 
 ## Pretrained Encoders are All You Need [[`abs`](https://arxiv.org/abs/2106.05139), [`pdf`](https://arxiv.org/pdf/2106.05139)]
 Mina Khan, P Srivatsa, Advait Rane, Shriram Chenniappa, <strong>Rishabh Anand</strong>, Sherjil Ozair, Pattie Maes
-- Workshop on Unsupervised Reinforcement Learning, ICML, 2021
+- Workshop on Unsupervised Reinforcement Learning, ICML 2021
