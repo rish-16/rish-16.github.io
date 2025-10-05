@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Rishabh Anand</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Funnel Sans", Georgia, serif;
+      line-height: 1.6;
+      color: #000;
+      font-optical-sizing: auto;
+      font-style: normal;
+      background: #fff;
+    }
+
+    nav {
+      border-bottom: 1px solid #000;
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.active {
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem 4rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #00b894;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .publication {
+      margin-bottom: 1.5rem;
+    }
+
+    .publication-title {
+      font-weight: 500;
+      color: #341f97;
+      margin-bottom: 0.25rem;
+    }
+
+    .publication-authors {
+      font-style: italic;
+      color: #333;
+      margin-bottom: 0.25rem;
+    }
+
+    .publication-venue {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid #000;
+    }
+
+    .header-text h1 {
+      margin-bottom: 0.25rem;
+    }
+
+    .tagline {
+      color: #333;
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 639px) {
+      .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    @media (min-width: 640px) {
+      nav ul {
+        padding: 0 2rem;
+      }
+
+      .container {
+        padding: 0 2rem 4rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="header-section">
+      <img src="images/profile.jpg" alt="Rishabh Anand" class="profile-pic">
+      <div class="header-text">
+        <h1>Rishabh Anand</h1>
+        <p class="tagline">Research student, Open-source contributor, Writer</p>
+      </div>
+    </div>
+    
+    <p>
+      Hey! I'm a grad student at Yale University advised by <a href="https://www.cs.yale.edu/homes/ying-rex/">Rex Ying</a>.
+      I’m interested in <strong>geometric deep learning and generative modelling for drug discovery</strong>. 
+    </p>
+    <p>
+      I graduated from the National University of Singapore (NUS), majoring in Computer Science and Pure Mathematics. 
+      I was co-advised by <a href="https://bhooi.github.io/">Bryan Hooi</a> and <a href="https://www.cl.cam.ac.uk/~pl219/">Pietro Liò</a>. 
+      My <a href="https://openreview.net/forum?id=wOc1Yx5s09">thesis</a> was on <strong>generative models for de novo 3D RNA backbone design</strong>.
+    </p>
+    <hr style="border: none; border-top: 1pt solid #000; margin: 1.5rem 0;">
+    <p>
+        I write about life and a bunch of random seemingly-unconnected things (<a href="https://rishflections.substack.com/">substack</a>, <a href="https://rish16.notion.site/aea001f7f32548acb068a9bb3971c97d?v=7e86063471c84a4b81694c11f511aa36">old blog</a>), 
+        ML/AI4Bio (<a href="https://rishtech.substack.com/">tech blog</a>), and am also an active open-source contributor for ML tooling (<a href="https://github.com/rish-16">github</a>).
+    </p>
+    <hr style="border: none; border-top: 1pt solid #000; margin: 1.5rem 0;">
+    <p>
+      <a href="https://github.com/rish-16">github</a> / 
+      <a href="https://x.com/rishabh16_">twitter</a> / 
+      <a href="https://www.linkedin.com/in/rishabhanand16/">linkedin</a> / 
+      <a href="https://scholar.google.com/citations?user=mn7sL5MAAAAJ&hl=en">scholar</a>
+      <br>
+      mail.rishabh.anand@gmail.com
+    </p>
+
+    <h2>Publications</h2>
+    <p>
+      <strong>Stuff I find cool:</strong> biomolecule design, protein/molecular dynamics, and literally anything structural-biology-related. I also like LLMs and Mechanistic Interpretability.
+    </p>
+    <p>(* equal contribution)</p>
+
+    <div class="publication">
+      <div class="publication-title">Platonic Transformers: A Solid Choice for Equivariance [TBA]</div>
+      <div class="publication-authors">Mohammad Islam, <strong>Rishabh Anand</strong>*, David Wessels*, Friso de Kruiff, Thijs P. Kuipers, Rex Ying, Clara I. Sánchez, Sharvaree Vadgama, Georg Bökman, Erik J Bekkers</div>
+      <div class="publication-venue">Preprint. Under review.</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts</div>
+      <div class="publication-authors">Neil He*, <strong>Rishabh Anand</strong>*, Hiren Madhu, Ali Maatouk, Smita Krishnaswamy, Leandros Tassiulas, Menglin Yang, Rex Ying</div>
+      <div class="publication-venue">NeurIPS 2025</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">RNA-FrameFlow: Flow Matching for de novo 3D RNA Backbone Design</div>
+      <div class="publication-authors"><strong>Rishabh Anand</strong>*, Chaitanya K. Joshi*, Alex Morehead, Arian Jamasb, Charles Harris, Simon V. Mathis, Kieran Didi, Bryan Hooi, Pietro Liò</div>
+      <div class="publication-venue">TMLR 2025; MLCB 2024 (Oral); SPIGM Workshop, ICLR 2024 (Oral); AI4Science Workshop, ICLR 2024 (Spotlight); MoML 2024</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">gRNAde: Geometric Deep Learning for 3D RNA inverse design</div>
+      <div class="publication-authors">Chaitanya K. Joshi, Arian R. Jamasb, Ramon Viñas, Charles Harris, Simon V. Mathis, Alex Morehead, <strong>Rishabh Anand</strong>, Pietro Liò</div>
+      <div class="publication-venue">ICLR 2025 (Spotlight)</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">Recent Advancements in Deep Learning for Routing Problems</div>
+      <div class="publication-authors">Chaitanya Joshi* and <strong>Rishabh Anand</strong>*</div>
+      <div class="publication-venue">Blog Track, ICLR 2022 (Top 50% of submissions)</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">Pretrained Encoders are All You Need</div>
+      <div class="publication-authors">Mina Khan, P Srivatsa, Advait Rane, Shriram Chenniappa, <strong>Rishabh Anand</strong>, Sherjil Ozair, Pattie Maes</div>
+      <div class="publication-venue">Unsupervised RL Workshop, ICML 2021</div>
+    </div>
+  </div>
+</body>
+</html>
