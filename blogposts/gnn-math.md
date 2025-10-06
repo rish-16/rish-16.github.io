@@ -50,10 +50,7 @@ I start off by providing an in-depth breakdown of Graphs and Graph Neural Networ
         3. Graph Attention Network
         4. GraphSAGE
         5. Temporal Graph Network
-    5. **Conclusion** -->
-
-* Do not remove this line (it will not be displayed)
-{:toc}    
+    5. **Conclusion** -->   
 
 ---
 
