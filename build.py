@@ -95,7 +95,7 @@ html = f"""<!DOCTYPE html>
     }}
 
     .substack-notice a {{
-      color: #e91e63;
+      color: #00b894;
       text-decoration: none;
     }}
 
@@ -131,7 +131,7 @@ html = f"""<!DOCTYPE html>
     }}
 
     .post-title a {{
-      color: #e91e63;
+      color: #00b894;
       text-decoration: none;
     }}
 
@@ -207,7 +207,7 @@ html = f"""<!DOCTYPE html>
     .back-link {{
       display: inline-block;
       margin-bottom: 2rem;
-      color: #e91e63;
+      color: #00b894;
       text-decoration: none;
     }}
 
