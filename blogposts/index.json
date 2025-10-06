@@ -1,0 +1,38 @@
+[
+  {
+    "filename": "expressive-gnns",
+    "date": "2022-04-24",
+    "title": "Expressive GNNs and How To Tame Them",
+    "excerpt": ""
+  },
+  {
+    "filename": "routing-dl",
+    "date": "2022-03-25",
+    "title": "Recent Advances in Deep Learning for Routing Problems",
+    "excerpt": ""
+  },
+  {
+    "filename": "gnn-math",
+    "date": "2022-03-20",
+    "title": "Grokking Math Behind Graph Neural Networks",
+    "excerpt": ""
+  },
+  {
+    "filename": "elo-loss",
+    "date": "2022-01-30",
+    "title": "Elo Loss: From Chess Ratings to Objective Functions",
+    "excerpt": ""
+  },
+  {
+    "filename": "languages",
+    "date": "2022-01-24",
+    "title": "Mediums of Computational Communication",
+    "excerpt": ""
+  },
+  {
+    "filename": "first-post",
+    "date": "2022-01-16",
+    "title": "Welcome!",
+    "excerpt": ""
+  }
+]

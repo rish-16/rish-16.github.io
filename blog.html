@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <title>Blog - Rishabh Anand</title>
-  
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.1/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
   <style>
     * {
       margin: 0;
@@ -16,18 +22,14 @@
     }
 
     body {
-      font-family: "Funnel Sans", Georgia, serif;
-      line-height: 1.6;
-      color: #000;
-      font-optical-sizing: auto;
-      font-style: normal;
+      font-family: 'Funnel Sans', sans-serif;
       background: #fff;
+      color: #000;
     }
 
     nav {
-      border-bottom: 1px solid #000;
-      padding: 1rem 0;
-      margin-bottom: 2rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1.5rem 0;
     }
 
     nav ul {
@@ -36,148 +38,359 @@
       gap: 2rem;
       max-width: 800px;
       margin: 0 auto;
-      padding: 0 1rem;
+      padding: 0 2rem;
     }
 
     nav a {
-      color: #000;
       text-decoration: none;
-      font-weight: 500;
+      color: #000;
       font-size: 1rem;
+      font-weight: 400;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    nav a.active {
-      font-weight: bold;
-    }
-
     .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 0 1rem 4rem;
+      padding: 3rem 2rem;
     }
 
     h1 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
     }
 
-    h3 {
-      font-size: 1.15rem;
-      margin: 1.5rem 0 0.5rem;
+    .substack-notice {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #e0e0e0;
     }
 
-    a {
-      color: #d946a6;
+    .substack-notice a {
+      color: #e91e63;
       text-decoration: none;
     }
 
-    a:hover {
+    .substack-notice a:hover {
       text-decoration: underline;
     }
 
     .blog-list {
-      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
     }
 
-    .blog-item {
-      margin-bottom: 2rem;
+    .blog-post {
+      border-bottom: 1px solid #e0e0e0;
       padding-bottom: 2rem;
-      border-bottom: 1px solid #eee;
     }
 
-    .blog-item:last-child {
+    .blog-post:last-child {
       border-bottom: none;
     }
 
-    .blog-item h3 {
-      margin-top: 0;
-    }
-
-    .blog-item .date {
+    .post-date {
       color: #666;
       font-size: 0.9rem;
       margin-bottom: 0.5rem;
     }
 
-    .blog-item .excerpt {
-      color: #333;
+    .post-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
 
-    @media (min-width: 640px) {
-      nav ul {
-        padding: 0 2rem;
-      }
+    .post-title a {
+      color: #e91e63;
+      text-decoration: none;
+    }
 
-      .container {
-        padding: 0 2rem 4rem;
-      }
+    .post-title a:hover {
+      text-decoration: underline;
+    }
 
-      h1 {
-        font-size: 2rem;
-      }
+    .post-excerpt {
+      color: #333;
+      line-height: 1.6;
+    }
 
-      h3 {
-        font-size: 1.2rem;
-      }
+    .blog-content {
+      line-height: 1.8;
+    }
+
+    .blog-content h1 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .blog-content h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .blog-content h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.4rem;
+    }
+
+    .blog-content p {
+      margin-bottom: 1rem;
+    }
+
+    .blog-content img {
+      max-width: 100%;
+      height: auto;
+      margin: 1.5rem 0;
+    }
+
+    .blog-content pre {
+      background: #f6f8fa;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    .blog-content code {
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.9rem;
+    }
+
+    .blog-content p code {
+      background: #f6f8fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+
+    .blog-content ul, .blog-content ol {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .blog-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #e91e63;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .error {
+      color: #d32f2f;
+      padding: 1rem;
+      background: #ffebee;
+      border-radius: 4px;
+    }
+
+    .loading {
+      color: #666;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog.html">Blog</a></li>
     </ul>
   </nav>
 
-  <div class="container">
-    <h1>Blog</h1>
-    <ul class="blog-list" id="blog-list">
-      <li>Loading posts...</li>
-    </ul>
+  <div class="container" id="app">
+    <div id="content"></div>
   </div>
 
   <script>
-    // Blog posts configuration
-    // Add your blog posts here with their metadata
-    const BLOG_POSTS = [
-      {
-        slug: 'first-post',
-        title: 'My First Blog Post',
-        date: '2024-03-15',
-        excerpt: 'An introduction to my blog and what I plan to write about.'
-      },
-      {
-        slug: 'machine-learning-insights',
-        title: 'Insights on Machine Learning',
-        date: '2024-03-20',
-        excerpt: 'Some thoughts on recent developments in ML research.'
+    // Configure marked for syntax highlighting
+    marked.setOptions({
+      highlight: function(code, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          return hljs.highlight(code, { language: lang }).value;
+        }
+        return hljs.highlightAuto(code).value;
       }
-    ];
+    });
 
-    // Render blog list
-    function renderBlogList() {
-      const list = document.getElementById('blog-list');
+    // Parse frontmatter from markdown
+    function parseFrontmatter(content) {
+      const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+      const match = content.match(frontmatterRegex);
       
-      if (BLOG_POSTS.length === 0) {
-        list.innerHTML = '<li>No posts yet. Check back soon!</li>';
+      if (!match) {
+        return { metadata: {}, content: content };
+      }
+      
+      const frontmatter = match[1];
+      const markdown = match[2];
+      const metadata = {};
+      
+      frontmatter.split('\n').forEach(line => {
+        const [key, ...valueParts] = line.split(':');
+        if (key && valueParts.length) {
+          metadata[key.trim()] = valueParts.join(':').trim();
+        }
+      });
+      
+      return { metadata, content: markdown };
+    }
+
+    // Extract excerpt from content
+    function extractExcerpt(content, maxLength = 150) {
+      const parsed = parseFrontmatter(content);
+      if (parsed.metadata.excerpt) {
+        return parsed.metadata.excerpt;
+      }
+      
+      // Remove markdown syntax and get first paragraph
+      const text = parsed.content
+        .replace(/^#+ .+$/gm, '') // Remove headers
+        .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // Remove links
+        .replace(/[*_~`]/g, '') // Remove formatting
+        .trim();
+      
+      const firstParagraph = text.split('\n\n')[0];
+      if (firstParagraph.length <= maxLength) {
+        return firstParagraph;
+      }
+      return firstParagraph.substring(0, maxLength) + '...';
+    }
+
+    // Load blog post list
+    async function loadBlogList() {
+      try {
+        const response = await fetch('blogposts/index.json');
+        if (!response.ok) {
+          throw new Error('Could not load blog index');
+        }
+        return await response.json();
+      } catch (error) {
+        console.error('Error loading blog list:', error);
+        return [];
+      }
+    }
+
+    // Load individual blog post
+    async function loadBlogPost(filename) {
+      try {
+        const response = await fetch(`blogposts/${filename}.md`);
+        if (!response.ok) {
+          throw new Error('Blog post not found');
+        }
+        return await response.text();
+      } catch (error) {
+        console.error('Error loading blog post:', error);
+        return null;
+      }
+    }
+
+    async function renderBlogList() {
+      const content = document.getElementById('content');
+      content.innerHTML = `
+        <h1>Blog</h1>
+        <div class="substack-notice">
+          I have fully shifted to Substack. Check out my <a href="https://substack.com/@rishabh16">substack.com/@rishabh16</a> for more!
+        </div>
+        <div class="loading">Loading blog posts...</div>
+      `;
+
+      const posts = await loadBlogList();
+      
+      if (posts.length === 0) {
+        content.innerHTML = `
+          <h1>Blog</h1>
+          <div class="substack-notice">
+            I have fully shifted to Substack. Check out my <a href="https://substack.com/@rishabh16">substack.com/@rishabh16</a> for more!
+          </div>
+          <div class="error">No blog posts found. Please create an index.json file in the blogposts/ folder.</div>
+        `;
         return;
       }
 
-      list.innerHTML = BLOG_POSTS.map(post => `
-        <li class="blog-item">
-          <div class="date">${post.date}</div>
-          <h3><a href="posts/${post.slug}.html">${post.title}</a></h3>
-          <p class="excerpt">${post.excerpt}</p>
-        </li>
-      `).join('');
+      content.innerHTML = `
+        <h1>Blog</h1>
+        <div class="substack-notice">
+          I have fully shifted to Substack. Check out my <a href="https://substack.com/@rishabh16">substack.com/@rishabh16</a> for more!
+        </div>
+        <div class="blog-list">
+          ${posts.map(post => `
+            <div class="blog-post">
+              <div class="post-date">${post.date}</div>
+              <div class="post-title">
+                <a href="#/blog/${post.filename}">${post.title}</a>
+              </div>
+              <div class="post-excerpt">${post.excerpt}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
     }
 
-    renderBlogList();
+    async function renderBlogPost(filename) {
+      const content = document.getElementById('content');
+      
+      content.innerHTML = `
+        <a href="#/" class="back-link">← Back to Blog</a>
+        <div class="loading">Loading blog post...</div>
+      `;
+
+      const markdown = await loadBlogPost(filename);
+      
+      if (!markdown) {
+        content.innerHTML = `
+          <a href="#/" class="back-link">← Back to Blog</a>
+          <div class="error">Blog post not found.</div>
+        `;
+        return;
+      }
+
+      const { metadata, content: markdownContent } = parseFrontmatter(markdown);
+      const htmlContent = marked.parse(markdownContent);
+      
+      content.innerHTML = `
+        <a href="#/" class="back-link">← Back to Blog</a>
+        ${metadata.date ? `<div class="post-date">${metadata.date}</div>` : ''}
+        <div class="blog-content">${htmlContent}</div>
+      `;
+
+      // Render LaTeX equations
+      renderMathInElement(document.getElementById('content'), {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false}
+        ],
+        throwOnError: false
+      });
+    }
+
+    function router() {
+      const hash = window.location.hash.slice(1) || '/';
+      
+      if (hash === '/') {
+        renderBlogList();
+      } else if (hash.startsWith('/blog/')) {
+        const filename = hash.replace('/blog/', '');
+        renderBlogPost(filename);
+      }
+    }
+
+    window.addEventListener('hashchange', router);
+    window.addEventListener('load', router);
   </script>
 </body>
 </html>
