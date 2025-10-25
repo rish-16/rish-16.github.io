@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 # Read all markdown files from blogposts directory
-blogposts_dir = Path('blogposts')
+blogposts_dir = Path('essays')
 index_path = blogposts_dir / 'index.json'
 
 # Read the index.json file
@@ -13,12 +13,8 @@ with open(index_path, 'r', encoding='utf-8') as f:
 # Read all markdown files
 posts = []
 for post in index:
-    md_path = blogposts_dir / f"{post['filename']}.md"
-    with open(md_path, 'r', encoding='utf-8') as f:
-        content = f.read()
     posts.append({
         **post,
-        'content': content
     })
 
 # Generate the HTML file with embedded posts
@@ -27,7 +23,7 @@ html = f"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
+  <title>Essays</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -276,15 +272,12 @@ html = f"""<!DOCTYPE html>
     function renderBlogList() {{
       const content = document.getElementById('content');
       content.innerHTML = `
-        <h1>Blog</h1>
-        <div class="substack-notice">
-          I have fully shifted to Substack. Check out my <a href="https://substack.com/@rishabh16">substack.com/@rishabh16</a> for more!
-        </div>
+        <h1>Essays</h1>
         <div class="blog-list">
           ${{blogPosts.map(post => `
             <div class="blog-post">
               <div class="post-title">
-                <a href="#/blog/${{post.filename}}">${{post.title}}</a>
+                <a href="${{post.filename}}">${{post.title}}</a>
               </div>
             </div>
           `).join('')}}
@@ -298,8 +291,8 @@ html = f"""<!DOCTYPE html>
       
       if (!post) {{
         content.innerHTML = `
-          <a href="#/" class="back-link">← Back to Blog</a>
-          <div class="error">Blog post not found.</div>
+          <a href="#/" class="back-link">← Back to Essays</a>
+          <div class="error">Essay not found.</div>
         `;
         return;
       }}
@@ -308,7 +301,7 @@ html = f"""<!DOCTYPE html>
       const htmlContent = marked.parse(markdownContent);
       
       content.innerHTML = `
-        <a href="#/" class="back-link">← Back to Blog</a>
+        <a href="#/" class="back-link">← Back to Essays</a>
         ${{metadata.date || post.date ? `<div class="post-date">${{metadata.date || post.date}}</div>` : ''}}
         <div class="blog-content">${{htmlContent}}</div>
       `;
@@ -341,7 +334,7 @@ html = f"""<!DOCTYPE html>
 </html>"""
 
 # Write the generated HTML file
-with open('blog.html', 'w', encoding='utf-8') as f:
+with open('essays.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
 print('✅ Blog generated successfully! blog.html is ready for deployment.')

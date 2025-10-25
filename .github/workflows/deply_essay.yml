@@ -1,4 +1,4 @@
-name: Build and Deploy Blog
+name: Build and Deploy Essays
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
           python-version: '3.11'
 
       - name: Build blog
-        run: python build.py
+        run: python build_essays.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
