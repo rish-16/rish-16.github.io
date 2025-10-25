@@ -30,6 +30,9 @@ jobs:
       - name: Build blog
         run: python build.py
 
+      - name: Build essays
+        run: python build_essays.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
