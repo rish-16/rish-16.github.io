@@ -225,6 +225,7 @@ html = f"""<!DOCTYPE html>
       <li><a href="/">Home</a></li>
       <li><a href="/blog.html">Blog</a></li>
       <li><a href="/essays.html">Essays</a></li>
+      <p>A collection of letters and essays maintained since Summer 2025 ...</p>
     </ul>
   </nav>
 
