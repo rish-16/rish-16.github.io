@@ -225,7 +225,6 @@ html = f"""<!DOCTYPE html>
       <li><a href="/">Home</a></li>
       <li><a href="/blog.html">Blog</a></li>
       <li><a href="/essays.html">Essays</a></li>
-      <p>A collection of letters and essays maintained since Summer 2025 ...</p>
     </ul>
   </nav>
 
@@ -274,6 +273,7 @@ html = f"""<!DOCTYPE html>
       const content = document.getElementById('content');
       content.innerHTML = `
         <h1>Essays</h1>
+        <p>A collection of letters and essays maintained since Summer 2025 ...</p>
         <div class="blog-list">
           ${{blogPosts.map(post => `
             <div class="blog-post">
