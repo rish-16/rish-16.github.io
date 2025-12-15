@@ -273,6 +273,9 @@ html = f"""<!DOCTYPE html>
       const content = document.getElementById('content');
       content.innerHTML = `
         <h1>Essays</h1>
+        <p>A collection of letters and essays maintained since Summer 2025.</p>
+        <br>
+        <br>
         <div class="blog-list">
           ${{blogPosts.map(post => `
             <div class="blog-post">
